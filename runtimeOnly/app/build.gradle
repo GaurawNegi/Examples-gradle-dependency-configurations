@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.gauraw.runtimeonly"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+
+    /**
+     * if we will add two different module with same package then gradle will pick the first one in the order
+     */
+
+    /**
+     * we can't use "implementation project(':logger-api')" since via using this logger-api would be
+     * in final build means in runtimePath , and at logger-api we are throwing exception to force to
+     * implement one the implementation of it.
+     */
+
+    /**
+     * logger-api is just have the structure so that user can use call name to access the functionality
+     */
+    compileOnly project(':logger-api')
+
+    /**
+     * we can choose between logger-systrace and logger-toast,
+     * which accordingly change the behaviour of logger
+     */
+
+    runtimeOnly project(':logger-systrace')// print the log in via println
+//    runtimeOnly project(':logger-toast')// log every text via Toast
+
+
+}

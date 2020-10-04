@@ -1,0 +1,9 @@
+apply plugin: 'java'
+
+dependencies {
+    implementation 'com.squareup:javapoet:1.11.1'
+    implementation project(':lib-activity-launcher')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

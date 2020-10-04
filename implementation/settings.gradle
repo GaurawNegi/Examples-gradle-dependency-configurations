@@ -1,0 +1,4 @@
+include ':network-manager'
+include ':image-loader'
+include ':app'
+rootProject.name = "implementation"

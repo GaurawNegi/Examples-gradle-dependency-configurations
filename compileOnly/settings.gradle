@@ -1,0 +1,5 @@
+include ':login'
+include ':lib-activity-launcher-processor'
+include ':lib-activity-launcher'
+include ':app'
+rootProject.name = "compileOnly"

@@ -1,0 +1,5 @@
+include ':logger-toast'
+include ':logger-systrace'
+include ':logger-api'
+include ':app'
+rootProject.name = "runtimeOnly"
