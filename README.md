@@ -1,2 +1,6 @@
 # Examples-gradle-dependency-configurations
-Examples-gradle-dependency-configurations-implementation-api-compileOnly-runtimeOnly
+This project is container of four different independent andorid projects, one for each configuration(implementation-api-compileOnly-runtimeOnly)
+
+Primary Goal of this project to get undersanding of gradle dependency configurations
+
+
