@@ -7,7 +7,7 @@ Here we will discuss four major configurations which include:
 
 
 
-This [Blog Post](https://medium.com/@gauraw.negi/how-gradle-dependency-configurations-work-underhood-e934906752e5) will help to to understand about the working of all above dependency configurations.
+This [Blog Post](https://medium.com/@gauraw.negi/how-gradle-dependency-configurations-work-underhood-e934906752e5) will help to understand about the working of all above dependency configurations and give you the context of this project.
 
 
 # The advantage of choosing the right configuration:
