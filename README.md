@@ -1,11 +1,13 @@
-# Examples-gradle-dependency-configurations
-
+# Examples-gradle-dependency-configurations #
 Here we will discuss four major configurations which include:
-# implementation
-# api 
-# compileOnly
-# runtimeOnly
+### implementation ### 
+### api            ### 
+### compileOnly    ###     
+### runtimeOnly    ### 
 
+
+
+This [Blog Post](https://medium.com/@gauraw.negi/how-gradle-dependency-configurations-work-underhood-e934906752e5) will help to to understand about the working of all above dependency configurations.
 
 
 # The advantage of choosing the right configuration:
