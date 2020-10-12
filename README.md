@@ -1,4 +1,4 @@
-# Examples-gradle-dependency-configurations #
+# Examples of gradle dependency configurations #
 Here we will discuss four major configurations which include:
 ### implementation ### 
 ### api            ### 
