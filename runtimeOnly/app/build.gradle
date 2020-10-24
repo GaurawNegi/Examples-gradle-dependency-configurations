@@ -42,12 +42,12 @@ dependencies {
     compileOnly project(':logger-api')
 
     /**
-     * we can choose between logger-systrace and logger-toast,
+     * we can choose between logger-systrace and logger-crashlytics,
      * which accordingly change the behaviour of logger
      */
 
     runtimeOnly project(':logger-systrace')// print the log in via println
-//    runtimeOnly project(':logger-toast')// log every text via Toast
+//    runtimeOnly project(':logger-crashlytics')// log every text to crashlytics
 
 
 }

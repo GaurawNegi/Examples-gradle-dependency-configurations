@@ -1,14 +1,17 @@
 package com.gauraw.logger
 
 import android.content.Context
-import android.widget.Toast
+import com.gauraw.logger.crashlytics.Crashlytics
 
 class Logger(private val context: Context) {
+
+    private val crashlytics = Crashlytics(context)
+
     fun getModuleName(): String {
-        return "logger-toast"
+        return "logger-crashlytics"
     }
 
     fun log(text: String) {
-        Toast.makeText(context, text, Toast.LENGTH_SHORT).show()
+        crashlytics.log(text)
     }
 }

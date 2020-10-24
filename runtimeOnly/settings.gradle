@@ -1,4 +1,4 @@
-include ':logger-toast'
+include ':logger-crashlytics'
 include ':logger-systrace'
 include ':logger-api'
 include ':app'
